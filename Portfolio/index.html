@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+	<link rel="icon" href="img/icon.png" type="image/png">
+</head>
+<body>
+    <!-- Main Portfolio Container -->
+    <div class="portfolio-container">
+        <!-- Header Section -->
+	<header>
+		<a href="../index.html" class="no-underline">
+			<div class="logo">Tghanafiazmi.</div>
+		</a>
+		<button class="menu-toggle" onclick="toggleMenu()">&#9776;</button> <!-- Hamburger Icon -->
+		<nav id="navbar">
+			<button class="close-btn" onclick="toggleMenu()">&times;</button> <!-- Close Icon -->
+			<ul>
+				<li><a href="#" onclick="showSection('design', this)">Design</a></li>
+				<li><a href="#" onclick="showSection('games', this)">Games</a></li>
+				<li><a href="#" onclick="showSection('projects', this)">Projects</a></li>
+				<li><a href="#" onclick="showSection('video', this)">Video</a></li>
+				<li><a href="#" onclick="showSection('model', this)">3D</a></li>
+				<li><a href="#" onclick="showSection('others', this)">Others</a></li>
+			</ul>
+		</nav>
+		<!-- Overlay background for shadow effect -->
+		<div id="overlay" onclick="toggleMenu()"></div>
+	</header>
+
+
+
+        <!-- Featured Projects Section -->
+        <section class="featured-projects">
+            <h2>Featured Projects</h2>
+			
+<div class="portfolio-container">
+    <div class="category-navigation">
+        <button onclick="filterCategory('food')" id="foodBtn">Food</button>
+        <button onclick="filterCategory('logo')" id="logoBtn">Logo</button>
+        <button onclick="filterCategory('other')" id="otherBtn">Other</button>
+        <button onclick="filterCategory('poster')" id="posterBtn">Poster</button>
+        <button onclick="filterCategory('resume')" id="resumeBtn">Resume</button>
+        <button onclick="filterCategory('shirt')" id="shirtBtn">Shirt</button>
+        <button onclick="filterCategory('all')" id="allBtn">Show All</button>
+    </div>
+
+
+        <button id="backToTopBtn" class="back-to-top-btn">↑</button>
+<!-- Design Category -->
+            <div id="design" class="project-category">
+                <div class="project-cards">
+				
+                    <!-------------------------------------------- Food_img ----------------------------------------------->
+					<div class="project-card" data-category="food">
+						<img src="img/F_img1.jpg" alt="F_img 1">
+						<h3>Dip & Dip: Katsu Chicken Rice Set</h3>
+						<p>Red-themed poster featuring dynamic brush art, highlighting a crispy katsu chicken rice set.</p>
+					</div>
+
+					<div class="project-card" data-category="food">
+						<img src="img/F_img2.jpg" alt="F_img 2">
+						<h3>Mamariam: Classic Product Series 1</h3>
+						<p>Elegant red and gold-themed poster featuring a sophisticated design with a subtle paper texture.</p>
+					</div>
+
+					<div class="project-card" data-category="food">
+						<img src="img/F_img3.jpg" alt="F_img 3">
+						<h3>Mamariam: Classic Product Series 2</h3>
+						<p>Rich red and gold poster design enhanced with grunge elements for a textured, vintage feel.</p>
+					</div>
+
+					<div class="project-card" data-category="food">
+						<img src="img/F_img4.jpg" alt="F_img 4">
+						<h3>Mamariam: Classic Product Series 3</h3>
+						<p>Distinctive poster with a red and gold split-background design, emphasizing modern aesthetics.</p>
+					</div>
+
+					<div class="project-card" data-category="food">
+						<img src="img/F_img5.jpg" alt="F_img 5">
+						<h3>Mamariam: Signature Product 4</h3>
+						<p>A refined red and gold-themed poster featuring intricate details and rich textures.</p>
+					</div>
+
+					<div class="project-card" data-category="food">
+						<img src="img/F_img6.jpg" alt="F_img 6">
+						<h3>Dip & Dip: Katsu Chicken Rice Fusion</h3>
+						<p>Bold red-themed poster blending brush strokes and visuals of a satisfying katsu chicken rice meal.</p>
+					</div>
+
+
+                    <!-------------------------------------------- Logo_img ----------------------------------------------->
+					<div class="project-card" data-category="logo">
+						<img src="img/L_img1.jpg" alt="L_img 1">
+						<h3>Buaya Darat Esports Logo</h3>
+						<p>Esports logo featuring an alligator mascot, set against a bold blue and yellow background.</p>
+					</div>
+
+					<div class="project-card" data-category="logo">
+						<img src="img/L_img2.jpg" alt="L_img 2">
+						<h3>Alpha Gaming Logo</h3>
+						<p>Futuristic logo with a purple background and a sleek, sharp 'A' shape in red.</p>
+					</div>
+
+					<div class="project-card" data-category="logo">
+						<img src="img/L_img3.jpg" alt="L_img 3">
+						<h3>HE Architectural Logo</h3>
+						<p>Architectural style logo in blue and pink tones, with a modern and minimalist design.</p>
+					</div>
+
+					<div class="project-card" data-category="logo">
+						<img src="img/L_img4.jpg" alt="L_img 4">
+						<h3>Boyee’s Esport Logo</h3>
+						<p>Green-themed logo with an alligator mascot and claws, featuring a green-black gradient background.</p>
+					</div>
+
+					<div class="project-card" data-category="logo">
+						<img src="img/L_img5.jpg" alt="L_img 5">
+						<h3>Roulette Game Logo</h3>
+						<p>Card-themed logo with a vibrant yellow and red color scheme, capturing the essence of a roulette game.</p>
+					</div>
+
+					<div class="project-card" data-category="logo">
+						<img src="img/L_img6.jpg" alt="L_img 6">
+						<h3>Neko Gaming Clan Logo</h3>
+						<p>Mascot logo in orange and black colors, framed by a shield, representing a gaming clan.</p>
+					</div>
+
+					<div class="project-card" data-category="logo">
+						<img src="img/L_img7.jpg" alt="L_img 7">
+						<h3>Tyrant Esports Logo</h3>
+						<p>Dragon mascot with claws and shield, set against a dynamic red, blue, and black background.</p>
+					</div>
+
+					<div class="project-card" data-category="logo">
+						<img src="img/L_img8.jpg" alt="L_img 8">
+						<h3>X Gaming Logo</h3>
+						<p>Bold 'X' logo with a blue and red color scheme, featuring a gradient gold background.</p>
+					</div>
+
+					<div class="project-card" data-category="logo">
+						<img src="img/L_img9.jpg" alt="L_img 9">
+						<h3>Tyrant Esports Masked Logo</h3>
+						<p>Masked mascot logo featuring a sickle, with a gradient purple background.</p>
+					</div>
+
+					<div class="project-card" data-category="logo">
+						<img src="img/L_img10.jpg" alt="L_img 10">
+						<h3>Mugiwara One Piece Logo</h3>
+						<p>Luffy-inspired logo from One Piece, featuring a shield and a red-black gradient background.</p>
+					</div>
+
+					<div class="project-card" data-category="logo">
+						<img src="img/L_img11.jpg" alt="L_img 11">
+						<h3>Amarekachan Mascot Logo</h3>
+						<p>Playful mascot-style logo with a shield background and a textured black backdrop.</p>
+					</div>
+
+					<div class="project-card" data-category="logo">
+						<img src="img/L_img12.jpg" alt="L_img 12">
+						<h3>Zyndicate Esports Dragon Logo</h3>
+						<p>Dragon icon with a shield design, featuring a gold and orange gradient background.</p>
+					</div>
+
+					<div class="project-card" data-category="logo">
+						<img src="img/L_img13.jpg" alt="L_img 13">
+						<h3>Web Linked  Logo</h3>
+						<p>Blue and white logo symbolizing connectivity, designed like a website link structure.</p>
+					</div>
+
+					<div class="project-card" data-category="logo">
+						<img src="img/L_img14.jpg" alt="L_img 14">
+						<h3>FS Logo</h3>
+						<p>Simple blue and white logo featuring the initials 'FS', representing a clean and modern design.</p>
+					</div>
+
+                    <!-------------------------------------------- Others_img ----------------------------------------------->
+					
+					<div class="project-card" data-category="other">
+						<img src="img/O_img1.jpg" alt="O_img 1">
+						<h3>UITM Lanyard - Purple Batik Pattern</h3>
+						<p>Featuring a unique purple design with traditional batik patterns.</p>
+					</div>
+					<div class="project-card" data-category="other">
+						<img src="img/O_img2.jpg" alt="O_img 2">
+						<h3>Wedding Invitation Card</h3>
+						<p>Elegant dark blue and light blue color scheme with floral elements.</p>
+					</div>
+					<div class="project-card" data-category="other">
+						<img src="img/O_img3.jpg" alt="O_img 3">
+						<h3>UITM Lanyard - Chemistry Design</h3>
+						<p>Black background with a chemistry-themed overlay design.</p>
+					</div>
+					<div class="project-card" data-category="other">
+						<img src="img/O_img4.jpg" alt="O_img 4">
+						<h3>Sejadah Lipat Tracing</h3>
+						<p>Yellow design with light blue background, a unique cultural touch.</p>
+					</div>
+					<div class="project-card" data-category="other">
+						<img src="img/O_img5.jpg" alt="O_img 5">
+						<h3>Blue and Black Banner Design</h3>
+						<p>Dark blue with red elements and bold red text for a striking effect.</p>
+					</div>
+					<div class="project-card" data-category="other">
+						<img src="img/O_img6.jpg" alt="O_img 6">
+						<h3>Front Design - Business Card</h3>
+						<p>Clean design featuring white as the primary color, with red and blue accents.</p>
+					</div>
+					<div class="project-card" data-category="other">
+						<img src="img/O_img7.jpg" alt="O_img 7">
+						<h3>Back Design - Business Card</h3>
+						<p>Clean design featuring blue as the primary color, with white text details.</p>
+					</div>
+					<div class="project-card" data-category="other">
+						<img src="img/O_img8.jpg" alt="O_img 8">
+						<h3>Burger Banner</h3>
+						<p>Featuring a burger logo on the left, with a menu on the right, in orange and brick tones.</p>
+					</div>
+					<div class="project-card" data-category="other">
+						<img src="img/O_img9.jpg" alt="O_img 9">
+						<h3>Uitm Certificate Design</h3>
+						<p>Elegant black and gold design for a prestigious certificate.</p>
+					</div>
+					<div class="project-card" data-category="other">
+						<img src="img/O_img10.jpg" alt="O_img 10">
+						<h3>Futuristic Youtube Banner</h3>
+						<p>Dark blue to purple gradient background with red accents for a modern look.</p>
+					</div>
+					<div class="project-card" data-category="other">
+						<img src="img/O_img11.jpg" alt="O_img 11">
+						<h3>Random Wave Pattern</h3>
+						<p>Abstract red lines on a dark blue to purple gradient background.</p>
+					</div>
+					<div class="project-card" data-category="other">
+						<img src="img/O_img12.jpg" alt="O_img 12">
+						<h3>Pes Ikan Bakar Sticker</h3>
+						<p>Gold text on a red background featuring a fish image.</p>
+					</div>
+					<div class="project-card" data-category="other">
+						<img src="img/O_img13.jpg" alt="O_img 13">
+						<h3>Dz Crunchies Sticker</h3>
+						<p>Orange and yellow chip elements with a contrasting black background.</p>
+					</div>
+					<div class="project-card" data-category="other">
+						<img src="img/O_img14.jpg" alt="O_img 14">
+						<h3>Office Plan Design</h3>
+						<p>Divided into four sections, each with a computer icon, showcasing office layout.</p>
+					</div>
+					<div class="project-card" data-category="other">
+						<img src="img/O_img15.jpg" alt="O_img 15">
+						<h3>Second Youtube Banner</h3>
+						<p>Futuristic dark blue to purple gradient background with red and dark purple elements.</p>
+					</div>
+					<div class="project-card" data-category="other">
+						<img src="img/O_img16.jpg" alt="O_img 16">
+						<h3>Sejadah Design</h3>
+						<p>Yellow and dark yellow with a blue mosque design for a unique cultural appeal.</p>
+					</div>
+					<div class="project-card" data-category="other">
+						<img src="img/O_img17.jpg" alt="O_img 17">
+						<h3>LT Greeting Cards Front</h3>
+						<p>Black background with red elements and a welcoming text design.</p>
+					</div>
+					<div class="project-card" data-category="other">
+						<img src="img/O_img18.jpg" alt="O_img 18">
+						<h3>LT Greeting Cards Back</h3>
+						<p>Black background with red elements, featuring a thoughtful greeting message.</p>
+					</div>
+					
+                    <!-------------------------------------------- Poster_img ----------------------------------------------->
+					
+					<div class="project-card" data-category="poster">
+						<img src="img/P_img1.jpg" alt="P_img 1">
+						<h3>Scholarsheesh Educational Poster</h3>
+						<p>Featuring four individuals with a blue, black, and red palette, this poster inspires learning.</p>
+					</div>
+
+					<div class="project-card" data-category="poster">
+						<img src="img/P_img2.jpg" alt="P_img 2">
+						<h3>Saving for the Future Poster</h3>
+						<p>This blue and white poster emphasizes financial planning with logo and paper texture.</p>
+					</div>
+
+					<div class="project-card" data-category="poster">
+						<img src="img/P_img3.jpg" alt="P_img 3">
+						<h3>Pes Ikan Bakar Poster</h3>
+						<p>Red and white theme with golden text highlights the product on a paper-textured background.</p>
+					</div>
+
+					<div class="project-card" data-category="poster">
+						<img src="img/P_img4.jpg" alt="P_img 4">
+						<h3>Sejadah Travel Poster</h3>
+						<p>Blue and gold tones highlight the product in an infographic design.</p>
+					</div>
+
+					<div class="project-card" data-category="poster">
+						<img src="img/P_img5.jpg" alt="P_img 5">
+						<h3>Webinar Poster</h3>
+						<p>This pink and purple poster captures attention for an upcoming webinar.</p>
+					</div>
+
+					<div class="project-card" data-category="poster">
+						<img src="img/P_img6.jpg" alt="P_img 6">
+						<h3>COVID-19 Awareness Poster</h3>
+						<p>Blue and orange infographic shares key COVID-19 safety information.</p>
+					</div>
+
+					<div class="project-card" data-category="poster">
+						<img src="img/P_img7.jpg" alt="P_img 7">
+						<h3>Saving for the Future Poster 2</h3>
+						<p>Blue and dark blue tones use white text to communicate financial security.</p>
+					</div>
+
+					<div class="project-card" data-category="poster">
+						<img src="img/P_img8.jpg" alt="P_img 8">
+						<h3>Saving for the Future Poster 3</h3>
+						<p>Light blue theme with white text conveys the importance of saving for the future.</p>
+					</div>
+
+					<div class="project-card" data-category="poster">
+						<img src="img/P_img9.jpg" alt="P_img 9">
+						<h3>Malaysia Heritage Poster</h3>
+						<p>Features the Malaysian flag and city elements, evoking national pride with paper texture.</p>
+					</div>
+
+					<div class="project-card" data-category="poster">
+						<img src="img/P_img10.jpg" alt="P_img 10">
+						<h3>Malaysia Poster 2</h3>
+						<p>The Malaysian flag and cloudy overlay create a powerful, patriotic design.</p>
+					</div>
+
+					<div class="project-card" data-category="poster">
+						<img src="img/P_img11.jpg" alt="P_img 11">
+						<h3>FYP Poster 1</h3>
+						<p>This blue and gold-themed poster highlights key details of the final year project.</p>
+					</div>
+
+					<div class="project-card" data-category="poster">
+						<img src="img/P_img12.jpg" alt="P_img 12">
+						<h3>Birthday Celebration Poster</h3>
+						<p>Gold text and festive elements like cookies and presents celebrate a birthday.</p>
+					</div>
+
+					<div class="project-card" data-category="poster">
+						<img src="img/P_img13.jpg" alt="P_img 13">
+						<h3>Infographic Poster on Sustainability</h3>
+						<p>Green elements emphasize sustainability and environmental awareness in this infographic.</p>
+					</div>
+
+					<div class="project-card" data-category="poster">
+						<img src="img/P_img14.jpg" alt="P_img 14">
+						<h3>House Design Poster</h3>
+						<p>This cozy design blends white and brown tones with a cloud effect.</p>
+					</div>
+
+					<div class="project-card" data-category="poster">
+						<img src="img/P_img15.jpg" alt="P_img 15">
+						<h3>FYP Poster 2</h3>
+						<p>This black and gold infographic offers a detailed view of the final year project.</p>
+					</div>
+
+					<div class="project-card" data-category="poster">
+						<img src="img/P_img16.jpg" alt="P_img 16">
+						<h3>House Design Poster 2</h3>
+						<p>Green background with a red square gives a modern twist to a house theme.</p>
+					</div>
+
+					<div class="project-card" data-category="poster">
+						<img src="img/P_img17.jpg" alt="P_img 17">
+						<h3>LT Badminton Poster (Vertical)</h3>
+						<p>This vertical poster captures badminton’s dynamic energy with a red theme and racket overlay.</p>
+					</div>
+
+					<div class="project-card" data-category="poster">
+						<img src="img/P_img18.jpg" alt="P_img 18">
+						<h3>LT Badminton Poster (Horizontal)</h3>
+						<p>Red theme and gradient effects highlight badminton’s energy in this horizontal poster.</p>
+					</div>
+										
+					<!-------------------------------------------- Resume_img ----------------------------------------------->
+					<div class="project-card" data-category="resume">
+						<img src="img/R_img1.jpg" alt="R_img 1">
+						<h3>Resume 1</h3>
+						<p>A modern resume design featuring a sleek white and black color scheme.</p>
+					</div>
+
+					<div class="project-card" data-category="resume">
+						<img src="img/R_img2.jpg" alt="R_img 2">
+						<h3>Resume Client 2</h3>
+						<p>Elegant and professional resume design with a white and black color palette.</p>
+					</div>
+
+					<div class="project-card" data-category="resume">
+						<img src="img/R_img3.jpg" alt="R_img 3">
+						<h3>Resume Client 3</h3>
+						<p>Modern resume design in a sophisticated blue and white color combination.</p>
+					</div>
+
+					<div class="project-card" data-category="resume">
+						<img src="img/R_img4.jpg" alt="R_img 4">
+						<h3>Resume Client 4</h3>
+						<p>Contemporary resume design with a professional light blue and white theme.</p>
+					</div>
+
+					<div class="project-card" data-category="resume">
+						<img src="img/R_img5.jpg" alt="R_img 5">
+						<h3>Resume Client 5</h3>
+						<p>Stylish resume design featuring a blue and white color scheme for a clean look.</p>
+					</div>
+
+                    <!-------------------------------------------- Shirt_img ----------------------------------------------->
+					 <div class="project-card" data-category="shirt">
+						<img src="img/S_img1.jpg" alt="S_img 1">
+						<h3>Tyrant Shirt Design</h3>
+						<p>Traced from 3D style to AI-printable format, featuring a bold black and red color scheme.</p>
+					</div>
+
+					<div class="project-card" data-category="shirt">
+						<img src="img/S_img2.jpg" alt="S_img 2">
+						<h3>ROG Esports Shirt</h3>
+						<p>3D-style esports shirt in a striking black and red color combination.</p>
+					</div>
+
+					<div class="project-card" data-category="shirt">
+						<img src="img/S_img3.jpg" alt="S_img 3">
+						<h3>Homebois Shirt Design</h3>
+						<p>Traced from 3D style to AI-printable format, with maroon and grey tones.</p>
+					</div>
+
+					<div class="project-card" data-category="shirt">
+						<img src="img/S_img4.jpg" alt="S_img 3">
+						<h3>Erudite Shirt</h3>
+						<p>3D-style design featuring a cream color and blue wave elements for a modern look.</p>
+					</div>
+
+					<div class="project-card" data-category="shirt">
+						<img src="img/S_img5.jpg" alt="S_img 3">
+						<h3>Tyrant Esports Shirt</h3>
+						<p>3D-style esports shirt with a red and black theme, featuring a dragon mascot and sponsor logo.</p>
+					</div>
+
+					<div class="project-card" data-category="shirt">
+						<img src="img/S_img6.jpg" alt="S_img 3">
+						<h3>Panmah Esports Shirt</h3>
+						<p>3D-style esports shirt with a dynamic blue and black color scheme.</p>
+					</div>
+
+					<div class="project-card" data-category="shirt">
+						<img src="img/S_img7.jpg" alt="S_img 3">
+						<h3>DDEX Esports Shirt 1</h3>
+						<p>3D-style red and black theme with bamboo pattern, designed for a football jersey look.</p>
+					</div>
+
+					<div class="project-card" data-category="shirt">
+						<img src="img/S_img8.jpg" alt="S_img 3">
+						<h3>DDEX Esports Shirt 2</h3>
+						<p>3D-style red and white theme with bamboo pattern, designed for a football jersey appearance.</p>
+					</div>
+
+					<div class="project-card" data-category="shirt">
+						<img src="img/S_img9.jpg" alt="S_img 3">
+						<h3>DDEX Esports Shirt 3</h3>
+						<p>3D-style red and black theme with checkered pattern, inspired by football jerseys.</p>
+					</div>
+					
+                </div>
+            </div>
+			
+			
+            <!-- Games Category -->
+			
+            <div id="games" class="project-category" style="display: none; text-align: center;">
+			
+				<!--
+                <div class="project-cards">
+                    <div class="project-card">
+                        <img src="game1.jpg" alt="Game Project 1">
+                        <h3>Game 1</h3>
+                        <p>Details about Game 1</p>
+                    </div>
+                    <div class="project-card">
+                        <img src="game2.jpg" alt="Game Project 2">
+                        <h3>Game 2</h3>
+                        <p>Details about Game 2</p>
+                    </div>
+                    <div class="project-card">
+                        <img src="game3.jpg" alt="Game Project 3">
+                        <h3>Game 3</h3>
+                        <p>Details about Game 3</p>
+                    </div>
+                </div>
+				-->
+				<p>"A stunning design experience is on the horizon – stay tuned!"</p>
+				<p>© TgHanafiAzmi. All rigths reserved</p>
+            </div>
+			
+
+            <!-- Projects Category -->
+            <div id="projects" class="project-category" style="display: none;text-align: center;">
+			<!--
+                <div class="project-cards">
+                    <div class="project-card">
+                        <img src="project1.jpg" alt="Project 1">
+                        <h3>Project 1</h3>
+                        <p>Details about Project 1</p>
+                    </div>
+                    <div class="project-card">
+                        <img src="project2.jpg" alt="Project 2">
+                        <h3>Project 2</h3>
+                        <p>Details about Project 2</p>
+                    </div>
+                    <div class="project-card">
+                        <img src="project3.jpg" alt="Project 3">
+                        <h3>Project 3</h3>
+                        <p>Details about Project 3</p>
+                    </div>
+                </div>
+				-->
+				<p>"We’re sketching up something brilliant – launching soon!"</p>
+				<p>© TgHanafiAzmi. All rigths reserved</p>
+            </div>
+
+            <!-- Video Category -->
+            <div id="video" class="project-category" style="display: none;text-align: center;">
+			<!--
+                <div class="project-cards">
+                    <div class="project-card">
+                        <img src="video1.jpg" alt="Video 1">
+                        <h3>Video 1</h3>
+                        <p>Details about Video 1</p>
+                    </div>
+                    <div class="project-card">
+                        <img src="video2.jpg" alt="Video 2">
+                        <h3>Video 2</h3>
+                        <p>Details about Video 2</p>
+                    </div>
+                    <div class="project-card">
+                        <img src="video3.jpg" alt="Video 3">
+                        <h3>Video 3</h3>
+                        <p>Details about Video 3</p>
+                    </div>
+                </div>
+				-->
+				<p>"Creative pixels are aligning – an epic design drop is coming!"</p>
+				<p>© TgHanafiAzmi. All rigths reserved</p>
+            </div>
+
+            <!-- 3D Category -->
+			<div id="model" class="project-category" style="display: none;text-align: center;">
+			<!--
+				<div class="project-cards">
+					<div class="project-card">
+						<img src="3d1.jpg" alt="Model 1">
+						<h3>Model 1</h3>
+						<p>Details about Model 1</p>
+					</div>
+					<div class="project-card">
+						<img src="3d2.jpg" alt="Model 2">
+						<h3>Model 2</h3>
+						<p>Details about Model 2</p>
+					</div>
+					<div class="project-card">
+						<img src="3d3.jpg" alt="Model 3">
+						<h3>Model 3</h3>
+						<p>Details about Model 3</p>
+					</div>
+				</div>
+				-->
+				<p>""Design magic is in progress – get ready for the reveal!""</p>
+				<p>© TgHanafiAzmi. All rigths reserved</p>
+			</div>
+
+            <!-- Others Category -->
+            <div id="others" class="project-category" style="display: none;text-align: center;">
+			<!--
+                <div class="project-cards">
+                    <div class="project-card">
+                        <img src="other1.jpg" alt="Other Project 1">
+                        <h3>Other 1</h3>
+                        <p>Details about Other 1</p>
+                    </div>
+                    <div class="project-card">
+                        <img src="other2.jpg" alt="Other Project 2">
+                        <h3>Other 2</h3>
+                        <p>Details about Other 2</p>
+                    </div>
+                    <div class="project-card">
+                        <img src="other3.jpg" alt="Other Project 3">
+                        <h3>Other 3</h3>
+                        <p>Details about Other 3</p>
+                    </div>
+                </div>
+				-->
+				<p>"Great designs are being fine-tuned – stay excited for the launch!"</p>
+				<p>© TgHanafiAzmi. All rigths reserved</p>
+            </div>
+
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
