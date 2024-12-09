@@ -165,9 +165,7 @@ img{
   text-align: center;
   margin-bottom: 2rem;
 }
-.section-description{
-  padding: 0 16rem;
-}
+
 /* Header */
 .header{
   position: fixed;
@@ -488,6 +486,7 @@ img{
   grid-template-columns: 1.8fr 1fr;
   column-gap: 6rem;
   margin-top: 6rem
+
 }
 .portfolio-img{
   height: 200px;
@@ -697,9 +696,7 @@ img{
   .swiper-button-next {
     right: 3rem;
 }
-  .section-description {
-    padding: 0 8rem;
-  }
+
   .about-imageContent {
     height: 400px;
   }
@@ -767,7 +764,7 @@ img{
     padding: 0.5rem;
   }
   .section-description, .contact-quote{
-    padding: 0;
+    padding: 2rem;
   }
   .aboutImg-textBox{
     right: -2rem
